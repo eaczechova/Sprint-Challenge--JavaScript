@@ -7,7 +7,7 @@
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 
-function consume(a,b, cb) {
+function consume(a,b,cb) {
   return cb (a,b);
 }
 
@@ -43,9 +43,9 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explanation: 
 
-// Thanks to the closure the function has not only access to variables declared 
-// within that nestedfunction function’s scope (here there is no variable declared), it can also 
-// access variables outward in its parent or global scope.
+// Thanks to closure the function has not only access to variables declared within nestedfunction
+// function scope (here, there is no variable declared), but it can also access variables outward 
+// in its parent scope or global scope.
 
 const external = "I'm outside the function";
 
